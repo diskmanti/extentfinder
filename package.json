@@ -1,0 +1,31 @@
+{
+  "name": "extentfinder",
+  "version": "1.0.0",
+  "description": "Utility for generating a map element for [Leaflet](http://leafletjs.com/) map",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx parcel serve index.html --open --out-dir docs",
+    "build": "npx parcel build index.html --out-dir docs --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diskmanti/extentfinder.git"
+  },
+  "keywords": [
+    "leafletjs",
+    "leaflet-map"
+  ],
+  "author": "diskmanti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diskmanti/extentfinder/issues"
+  },
+  "homepage": "https://github.com/diskmanti/extentfinder#readme",
+  "dependencies": {
+    "leaflet": "^1.5.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-clean-dist": "0.0.6"
+  }
+}
