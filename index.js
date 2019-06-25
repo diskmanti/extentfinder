@@ -38,7 +38,13 @@ function init() {
     infobox.refresh = function (properties) {
         this._div.innerHTML = '<h4>Current Map Center and Zoom</h4>';
         this._div.innerHTML += '&nbsp;<b>Lat</b>: ' + properties.lat + '<br/>' + '<b>&nbsp;Lng</b>: ' + properties.lng + '<br/>' + '<b>&nbsp;Zoom level</b>: ' + properties.zoom + '<br/><br/>';
-        this._div.innerHTML += '<button type="button" onclick="downloadMapCode()">Get Map Code</button>';
+        // this._div.innerHTML += '<button type="button" onclick=" + downloadMapCode() + ">Get Map Code</button>';
+        var btn = document.createElement('button');
+        btn.innerHTML = 'Get Map Code';
+        btn.addEventListener("click", () => {
+            downloadMapCode();
+        })
+        this._div.appendChild(btn);
 
     };
     infobox.addTo(map);
