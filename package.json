@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/diskmanti/extentfinder#readme",
   "dependencies": {
-    "leaflet": "^1.5.1"
+    "leaflet": "^1.6.0"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.3",
